@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.App_info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="App_info" Height="450" Width="600"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Border CornerRadius="10" Grid.RowSpan="2" RenderTransformOrigin="0.508,0.424">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF00FFFA" Offset="0.0"/>
+                    <GradientStop Color="#FF9C0E97" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="235" Width="574" FontSize="28" FontFamily="Segoe Script"><Run Text="Made by Svyatoslav Gurtovy"/><LineBreak/><Run Text="Copyright © "/><Run FontWeight="Bold" Text="SvG "/><Run Text="Corporation 2019."/><LineBreak/><Run Text="All rights reserved."/></TextBlock>
+        <Button Content="OK" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" Height="40" Margin="0,0,110,50"     FontFamily="Segoe Script" FontSize="24" Click="Button_Click"/>
+    </Grid>
+</Window>

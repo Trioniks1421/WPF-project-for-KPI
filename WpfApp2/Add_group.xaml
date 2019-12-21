@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp2.Add_group"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Add_group" Height="450" Width="600"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Border  CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF33A0CA" Offset="0.0"/>
+                    <GradientStop Color="#FF061203" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <TextBlock HorizontalAlignment="Left"  Margin="88,78,0,0" TextWrapping="Wrap" Text="Group name:" VerticalAlignment="Top" Height="34" Width="132" FontSize="24" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" BorderBrush="Black" Height="33" Margin="88,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" />
+        <TextBlock HorizontalAlignment="Left"  Margin="88,171,0,0" TextWrapping="Wrap" Text="Add user to group:" VerticalAlignment="Top" Height="34" Width="196" FontSize="24" FontFamily="Times New Roman"/>
+        <ListBox HorizontalAlignment="Left" BorderBrush="Black" Height="84" Margin="88,210,0,0" VerticalAlignment="Top" Width="232"/>
+        <TextBlock HorizontalAlignment="Left"  Margin="119,305,0,0" TextWrapping="Wrap" Text="Allow editing:" VerticalAlignment="Top" Height="34" Width="145" FontSize="20" FontFamily="Times New Roman"/>
+        <CheckBox  HorizontalAlignment="Left" Margin="250,311,0,0" VerticalAlignment="Top" Height="14"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="144" Margin="369,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="152"/>
+        <Button Content="Add photo" HorizontalAlignment="Left" Margin="384,277,0,0" VerticalAlignment="Top" Width="122" Height="34" Foreground="Black" FontSize="24" FontWeight="Normal"  FontFamily="Times New Roman" />
+        <Button x:Name="Back" Content="BACK" FontFamily="Times New Roman"  Background="#FF157C7C" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="100" Click="Back_Click" Margin="0,34,33.6,0"/>
+        <Button Content="ENTER" FontFamily="Times New Roman" Width="110" Background="#FF157C7C" VerticalAlignment="Bottom" Height="49" Margin="250,0,233.6,10"  RenderTransformOrigin="0.5,0.504"/>
+
+    </Grid>
+</Window>
